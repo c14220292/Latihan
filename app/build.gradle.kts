@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlinParcelize)
 }
 
 android {
-    namespace = "nit2x.paba.latihan"
+    namespace = "nit2x.paba.recyclerview"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "nit2x.paba.latihan"
+        applicationId = "nit2x.paba.recyclerview"
         minSdk = 33
         targetSdk = 34
         versionCode = 1
@@ -45,4 +46,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.picasso)
+    implementation(libs.gson)
 }
